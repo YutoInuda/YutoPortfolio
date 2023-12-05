@@ -107,7 +107,7 @@ const Portfolio = () => {
                     href="#"
                     className="text-[#333] font-poppins font-medium transition-all duration-300"
                     data-filter=".vimeo"
-                    onClick={handleFilterKeyChange("vimeo")}
+                    onClick={handleFilterKeyChange("web")}
                   >
                     Web
                   </a>
@@ -117,7 +117,7 @@ const Portfolio = () => {
                     href="#"
                     className="text-[#333] font-poppins font-medium transition-all duration-300"
                     data-filter=".youtube"
-                    onClick={handleFilterKeyChange("youtube")}
+                    onClick={handleFilterKeyChange("graphics")}
                   >
                     Graphics
                   </a>
@@ -156,7 +156,7 @@ const Portfolio = () => {
             </div>
             <div className="portfolio_list w-full h-auto clear-both float-left">
               <ul className="gallery_zoom ml-[-50px]">
-                <li className="youtube mb-[50px] w-1/2 float-left pl-[50px] item__">
+                {/* <li className="youtube mb-[50px] w-1/2 float-left pl-[50px] item__">
                   <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
                     <div className="image relative">
                       <img
@@ -234,8 +234,8 @@ const Portfolio = () => {
                       />
                     </div>
                   </div>
-                </li>
-                <li className="image mb-[50px] w-1/2 float-left pl-[50px] item__">
+                </li> */}
+                <li className="web mb-[50px] w-1/2 float-left pl-[50px] item__">
                   <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
                     <div className="image relative">
                       <img
@@ -245,57 +245,7 @@ const Portfolio = () => {
                       />
                       <div
                         className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
-                        data-img-url="assets/img/portfolio/4.jpg"
-                      />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Alla Gorova
-                        </h3>
-                        <span className="text-[14px]">Image</span>
-                      </div>
-                      <a
-                        className="cavani_tm_full_link zoom"
-                        href="assets/img/portfolio/4.jpg"
-                      />
-                    </div>
-                  </div>
-                </li>
-                <li className="image mb-[50px] w-1/2 float-left pl-[50px] item__">
-                  <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
-                    <div className="image relative">
-                      <img
-                        className="relative opacity-0 min-w-full"
-                        src="assets/img/thumbs/1-1.jpg"
-                        alt
-                      />
-                      <div
-                        className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
-                        data-img-url="assets/img/portfolio/5.jpg"
-                      />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Fele Sweet
-                        </h3>
-                        <span className="text-[14px]">Image</span>
-                      </div>
-                      <a
-                        className="cavani_tm_full_link zoom"
-                        href="assets/img/portfolio/5.jpg"
-                      />
-                    </div>
-                  </div>
-                </li>
-                <li className="detail mb-[50px] w-1/2 float-left pl-[50px] item__">
-                  <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
-                    <div className="image relative">
-                      <img
-                        className="relative opacity-0 min-w-full"
-                        src="assets/img/thumbs/1-1.jpg"
-                        alt
-                      />
-                      <div
-                        className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
-                        data-img-url="assets/img/portfolio/6.jpg"
+                        data-img-url="assets/img/portfolio/Meta Crowdsourcing Game1.jpg"
                       />
                       <div className="details">
                         <h3 className="text-[16px] mb-[2px] font-semibold">
@@ -441,6 +391,256 @@ const Portfolio = () => {
                           </ul>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </li>
+                <li className="graphics mb-[50px] w-1/2 float-left pl-[50px] item__">
+                  <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
+                    <div className="image relative">
+                      <img
+                        className="relative opacity-0 min-w-full"
+                        src="assets/img/thumbs/1-1.jpg"
+                        alt
+                      />
+                      <div
+                        className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                        data-img-url="assets/img/portfolio/Crowdsourcing_Game.jpg"
+                      />
+                      <div className="details">
+                        <h3 className="text-[16px] mb-[2px] font-semibold">
+                          Your game is a infrastructure
+                        </h3>
+                        <span className="text-[14px]">Graphics</span>
+                      </div>
+                      <a
+                        className="cavani_tm_full_link zoom"
+                        href="assets/img/portfolio/Crowdsourcing_Game.jpg"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li className="graphics mb-[50px] w-1/2 float-left pl-[50px] item__">
+                  <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
+                    <div className="image relative">
+                      <img
+                        className="relative opacity-0 min-w-full"
+                        src="assets/img/thumbs/1-1.jpg"
+                        alt
+                      />
+                      <div
+                        className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                        data-img-url="assets/img/portfolio/brakki.jpg"
+                      />
+                      <div className="details">
+                        <h3 className="text-[16px] mb-[2px] font-semibold">
+                          ブラッキー/月
+                        </h3>
+                        <span className="text-[14px]">Graphics</span>
+                      </div>
+                      <a
+                        className="cavani_tm_full_link zoom"
+                        href="assets/img/portfolio/brakki.jpg"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li className="graphics mb-[50px] w-1/2 float-left pl-[50px] item__">
+                  <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
+                    <div className="image relative">
+                      <img
+                        className="relative opacity-0 min-w-full"
+                        src="assets/img/thumbs/1-1.jpg"
+                        alt
+                      />
+                      <div
+                        className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                        data-img-url="assets/img/portfolio/kabigon.jpg"
+                      />
+                      <div className="details">
+                        <h3 className="text-[16px] mb-[2px] font-semibold">
+                          カビゴン/木
+                        </h3>
+                        <span className="text-[14px]">Graphics</span>
+                      </div>
+                      <a
+                        className="cavani_tm_full_link zoom"
+                        href="assets/img/portfolio/kabigon.jpg"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li className="graphics mb-[50px] w-1/2 float-left pl-[50px] item__">
+                  <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
+                    <div className="image relative">
+                      <img
+                        className="relative opacity-0 min-w-full"
+                        src="assets/img/thumbs/1-1.jpg"
+                        alt
+                      />
+                      <div
+                        className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                        data-img-url="assets/img/portfolio/pottyama.jpg"
+                      />
+                      <div className="details">
+                        <h3 className="text-[16px] mb-[2px] font-semibold">
+                          ポッチャマ/日
+                        </h3>
+                        <span className="text-[14px]">Graphics</span>
+                      </div>
+                      <a
+                        className="cavani_tm_full_link zoom"
+                        href="assets/img/portfolio/pottyama.jpg"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li className="graphics mb-[50px] w-1/2 float-left pl-[50px] item__">
+                  <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
+                    <div className="image relative">
+                      <img
+                        className="relative opacity-0 min-w-full"
+                        src="assets/img/thumbs/1-1.jpg"
+                        alt
+                      />
+                      <div
+                        className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                        data-img-url="assets/img/portfolio/mitune.jpg"
+                      />
+                      <div className="details">
+                        <h3 className="text-[16px] mb-[2px] font-semibold">
+                          ヌシタマミツネ
+                        </h3>
+                        <span className="text-[14px]">Graphics</span>
+                      </div>
+                      <a
+                        className="cavani_tm_full_link zoom"
+                        href="assets/img/portfolio/mitune.jpg"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li className="graphics mb-[50px] w-1/2 float-left pl-[50px] item__">
+                  <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
+                    <div className="image relative">
+                      <img
+                        className="relative opacity-0 min-w-full"
+                        src="assets/img/thumbs/1-1.jpg"
+                        alt
+                      />
+                      <div
+                        className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                        data-img-url="assets/img/portfolio/rioreia.jpg"
+                      />
+                      <div className="details">
+                        <h3 className="text-[16px] mb-[2px] font-semibold">
+                          ヌシリオレイア
+                        </h3>
+                        <span className="text-[14px]">Graphics</span>
+                      </div>
+                      <a
+                        className="cavani_tm_full_link zoom"
+                        href="assets/img/portfolio/rioreia.jpg"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li className="graphics mb-[50px] w-1/2 float-left pl-[50px] item__">
+                  <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
+                    <div className="image relative">
+                      <img
+                        className="relative opacity-0 min-w-full"
+                        src="assets/img/thumbs/1-1.jpg"
+                        alt
+                      />
+                      <div
+                        className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                        data-img-url="assets/img/portfolio/varufaruku.jpg"
+                      />
+                      <div className="details">
+                        <h3 className="text-[16px] mb-[2px] font-semibold">
+                          バルファルク
+                        </h3>
+                        <span className="text-[14px]">Graphics</span>
+                      </div>
+                      <a
+                        className="cavani_tm_full_link zoom"
+                        href="assets/img/portfolio/varufaruku.jpg"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li className="graphics mb-[50px] w-1/2 float-left pl-[50px] item__">
+                  <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
+                    <div className="image relative">
+                      <img
+                        className="relative opacity-0 min-w-full"
+                        src="assets/img/thumbs/1-1.jpg"
+                        alt
+                      />
+                      <div
+                        className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                        data-img-url="assets/img/portfolio/ginouga.jpg"
+                      />
+                      <div className="details">
+                        <h3 className="text-[16px] mb-[2px] font-semibold">
+                          ヌシジンオウガ
+                        </h3>
+                        <span className="text-[14px]">Graphics</span>
+                      </div>
+                      <a
+                        className="cavani_tm_full_link zoom"
+                        href="assets/img/portfolio/ginouga.jpg"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li className="graphics mb-[50px] w-1/2 float-left pl-[50px] item__">
+                  <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
+                    <div className="image relative">
+                      <img
+                        className="relative opacity-0 min-w-full"
+                        src="assets/img/thumbs/1-1.jpg"
+                        alt
+                      />
+                      <div
+                        className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                        data-img-url="assets/img/portfolio/polygon.jpg"
+                      />
+                      <div className="details">
+                        <h3 className="text-[16px] mb-[2px] font-semibold">
+                          アイコン
+                        </h3>
+                        <span className="text-[14px]">Graphics</span>
+                      </div>
+                      <a
+                        className="cavani_tm_full_link zoom"
+                        href="assets/img/portfolio/polygon.jpg"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li className="graphics mb-[50px] w-1/2 float-left pl-[50px] item__">
+                  <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
+                    <div className="image relative">
+                      <img
+                        className="relative opacity-0 min-w-full"
+                        src="assets/img/thumbs/1-1.jpg"
+                        alt
+                      />
+                      <div
+                        className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                        data-img-url="assets/img/portfolio/飛翔表紙1.jpg"
+                      />
+                      <div className="details">
+                        <h3 className="text-[16px] mb-[2px] font-semibold">
+                          広島大学総合科学部広報誌『飛翔』表紙
+                        </h3>
+                        <span className="text-[14px]">Graphics</span>
+                      </div>
+                      <a
+                        className="cavani_tm_full_link zoom"
+                        href="assets/img/portfolio/飛翔表紙1.jpg"
+                      />
                     </div>
                   </div>
                 </li>
