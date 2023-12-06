@@ -33,7 +33,7 @@ const Home = () => {
             Inuda Yuto
           </h3>
           <span className="line inline-block w-[70px] h-[5px] bg-[#333] mb-[30px]" />
-          <TypingAnimation />
+          {/* <TypingAnimation /> */}
           <div className="cavani_tm_button transition_link">
             <a href="#contact" onClick={() => navChange("portfolio")}>
               CHECK MY WORKS
