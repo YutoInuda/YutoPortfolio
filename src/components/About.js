@@ -53,7 +53,7 @@ const About = () => {
                   <strong>犬田悠斗/Inuda Yuto</strong> 
                 </p>
                 <p>
-                  東京大学大学院学際情報学府に在籍中。遊ぶことで社会貢献できるゲームであるクラウドソーシングゲームの開発・評価を行っている。また、既存のクラウドソーシングゲームを収集し、それらを遊べるプラットフォームを開発した。主にWEB制作とグラフィックデザインを行う。
+                  東京大学大学院学際情報学府に在籍中。遊ぶことで社会貢献できるゲームであるクラウドソーシングゲームの開発・評価を行っている。また、既存のクラウドソーシングゲームを収集し、それらを遊べるプラットフォームを開発した。
                 </p>
               </div>
               <div className="right w-[50%]">
@@ -137,6 +137,18 @@ const About = () => {
                     </li>
                     <li className="mb-[8px] w-full float-left relative pl-[25px]">
                       Photoshop
+                    </li>
+                    <li className="mb-[8px] w-full float-left relative pl-[25px]">
+                      ゲーミフィケーション
+                    </li>
+                    <li className="mb-[8px] w-full float-left relative pl-[25px]">
+                      コミュニティマネジメント
+                    </li>
+                    <li className="mb-[8px] w-full float-left relative pl-[25px]">
+                      展示
+                    </li>
+                    <li className="mb-[8px] w-full float-left relative pl-[25px]">
+                      統計学
                     </li>
                     <li className="w-full float-left relative pl-[25px]">
                       英語/中国語

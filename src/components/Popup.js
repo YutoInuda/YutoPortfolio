@@ -67,55 +67,47 @@ export const Detail = ({ isOpen4, toggleModalFour }) => {
                 <img src="assets/img/thumbs/4-2.jpg" alt="image" />
                 <div
                   className="main"
-                  data-img-url="assets/img/portfolio/6.jpg"
+                  data-img-url="assets/img/portfolio/7.jpg"
                   style={{
-                    backgroundImage: 'url("assets/img/portfolio/6.jpg")',
+                    backgroundImage: 'url("assets/img/portfolio/7.jpg")',
                   }}
                 />
               </div>
               <div className="portfolio_main_title">
                 <h3 className="text-[16px] mb-[2px] font-semibold">
-                  Alice Moon
+                  Meta Crowdsourcing Game
                 </h3>
-                <span className="text-[14px]">Detail</span>
+                <span className="text-[14px]">Web</span>
                 <div />
               </div>
               <div className="main_details w-full h-auto clear-both flex mb-[60px]">
                 <div className="textbox w-[70%] pr-[40px]">
                   <p className="mb-[15px]">
-                    We live in a world where we need to move quickly and iterate
-                    on our ideas as flexibly as possible. Building mockups
-                    strikes the ideal balance ease of modification. Building
-                    mockups strikes the ideal balance ease of modification.
+                  ゲームで社会課題を解決することができたらと考えたことはないだろうか。電車内を見渡すと、多くの人々がスマートフォンを持ち、カジュアルゲームで暇つぶしをしている姿を見ることができる。私は、この暇つぶしに当てられているエネルギーを社会のために活用することはできないだろうかと考えていた。そんな折に出会ったのが「クラウドソーシングゲーム」である。クラウドソーシングゲームとは、社会課題の解決のために必要な作業を市民に手伝ってもらうゲームである。私は、このクラウドソーシングゲームを普及させることで、社会がより楽しく、より豊かになると信じている。
                   </p>
                   <p>
-                    Mockups are useful both for the creative phase of the
-                    project - for instance when you're trying to figure out your
-                    user flows or the proper visual hierarchy - and the
-                    production phase when they phase when they will represent
-                    the target product. Building mockups strikes the ideal
-                    balance ease of modification.
+                  今回は、このような想いから、クラウドソーシングゲームを知ってもらうためのプラットフォームを開発した。このプラットフォーム内では、クラウドソーシングゲームを遊ぶことで、社会貢献ポイントを獲得することができ、仮想の社会を発展させることができる。この体験を通じて、クラウドソーシングゲームで遊ぶことが、社会発展に繋がるのだという感覚を味わってほしい。そして、ゲームを基盤とした社会に思いを馳せてみてほしい。
                   </p>
                 </div>
                 <div className="detailbox w-[30%] pl-[40px]">
                   <ul>
                     <li className="mb-[10px] w-full float-left">
-                      <span className="first font-bold block">Client</span>
-                      <span>Alvaro Morata</span>
-                    </li>
-                    <li className="mb-[10px] w-full float-left">
                       <span className="first font-bold block">Category</span>
                       <span>
                         <a className="text-[#7d7789]" href="#">
-                          Detail
+                          Web
                         </a>
                       </span>
                     </li>
                     <li className="mb-[10px] w-full float-left">
                       <span className="first font-bold block">Date</span>
-                      <span>March 07, 2021</span>
+                      <span>2023/11/16</span>
                     </li>
-                    <li className="w-full float-left">
+                    <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">URL</span>
+                      <a className="text-[#7d7789]" target="_blank" href="https://crowdsourcing-game.vercel.app/"><span>https://crowdsourcing-game.vercel.app/</span></a>
+                    </li>
+                    {/* <li className="w-full float-left">
                       <span className="first font-bold block">Share</span>
                       <ul className="share relative top-[7px]">
                         <li className="mr-[13px] inline-block">
@@ -146,7 +138,7 @@ export const Detail = ({ isOpen4, toggleModalFour }) => {
                           </a>
                         </li>
                       </ul>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -162,10 +154,10 @@ export const Detail = ({ isOpen4, toggleModalFour }) => {
                         />
                         <div
                           className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
-                          data-img-url="assets/img/portfolio/1.jpg"
+                          data-img-url="assets/img/portfolio/10.png"
                           style={{
                             backgroundImage:
-                              'url("assets/img/portfolio/1.jpg")',
+                              'url("assets/img/portfolio/10.png")',
                           }}
                         />
                       </div>
@@ -181,10 +173,10 @@ export const Detail = ({ isOpen4, toggleModalFour }) => {
                         />
                         <div
                           className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
-                          data-img-url="assets/img/portfolio/2.jpg"
+                          data-img-url="assets/img/portfolio/11.png"
                           style={{
                             backgroundImage:
-                              'url("assets/img/portfolio/2.jpg")',
+                              'url("assets/img/portfolio/11.png")',
                           }}
                         />
                       </div>
@@ -200,10 +192,10 @@ export const Detail = ({ isOpen4, toggleModalFour }) => {
                         />
                         <div
                           className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
-                          data-img-url="assets/img/portfolio/3.jpg"
+                          data-img-url="assets/img/portfolio/9.png"
                           style={{
                             backgroundImage:
-                              'url("assets/img/portfolio/3.jpg")',
+                              'url("assets/img/portfolio/9.png")',
                           }}
                         />
                       </div>

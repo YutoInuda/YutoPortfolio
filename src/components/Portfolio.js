@@ -245,13 +245,13 @@ const Portfolio = () => {
                       />
                       <div
                         className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
-                        data-img-url="assets/img/portfolio/Meta Crowdsourcing Game1.jpg"
+                        data-img-url="assets/img/portfolio/8.jpg"
                       />
                       <div className="details">
                         <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Alice Moon
+                          Meta Crowdsourcing Game
                         </h3>
-                        <span className="text-[14px]">Detail</span>
+                        <span className="text-[14px]">Web</span>
                       </div>
                       <a
                         className="cavani_tm_full_link portfolio_popup"
@@ -353,7 +353,7 @@ const Portfolio = () => {
                                   />
                                   <div
                                     className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
-                                    data-img-url="assets/img/portfolio/1.jpg"
+                                    data-img-url="assets/img/portfolio/8.jpg"
                                   />
                                 </div>
                               </div>
@@ -368,7 +368,7 @@ const Portfolio = () => {
                                   />
                                   <div
                                     className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
-                                    data-img-url="assets/img/portfolio/2.jpg"
+                                    data-img-url="assets/img/portfolio/7.jpg"
                                   />
                                 </div>
                               </div>
@@ -383,7 +383,7 @@ const Portfolio = () => {
                                   />
                                   <div
                                     className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
-                                    data-img-url="assets/img/portfolio/3.jpg"
+                                    data-img-url="assets/img/portfolio/7.jpg"
                                   />
                                 </div>
                               </div>
