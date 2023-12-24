@@ -43,6 +43,10 @@ export const Soundcloud = ({ isOpen3, toggleModalThree }) => {
     </Modal>
   );
 };
+
+
+
+
 export const Detail = ({ isOpen4, toggleModalFour }) => {
   return (
     <Modal
@@ -196,6 +200,179 @@ export const Detail = ({ isOpen4, toggleModalFour }) => {
                           style={{
                             backgroundImage:
                               'url("assets/img/portfolio/9.png")',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Modal>
+  );
+};
+
+
+export const Hongo = ({ isOpen5, toggleModalFive }) => {
+  return (
+    <Modal
+      isOpen={isOpen5}
+      onRequestClose={toggleModalFive}
+      contentLabel="My dialog"
+      className="mymodal"
+      overlayClassName="myoverlay"
+      closeTimeoutMS={300}
+      openTimeoutMS={300}
+    >
+      <div className="cavani_tm_modalbox opened">
+        <div className="box_inner">
+          <div className="close">
+            <a href="#" onClick={toggleModalFive}>
+              <i className="icon-cancel" />
+            </a>
+          </div>
+          <div className="description_wrap">
+            <div className="popup_details w-full h-auto clear-both float-left">
+              <div className="top_image">
+                <img src="assets/img/thumbs/4-2.jpg" alt="image" />
+                <div
+                  className="main"
+                  data-img-url="assets/img/portfolio/本郷補完1.jpg"
+                  style={{
+                    backgroundImage: 'url("assets/img/portfolio/本郷補完1.jpg")',
+                  }}
+                />
+              </div>
+              <div className="portfolio_main_title">
+                <h3 className="text-[16px] mb-[2px] font-semibold">
+                  本郷補完計画（制作協力）
+                </h3>
+                <span className="text-[14px]">Other</span>
+                <div />
+              </div>
+              <div className="main_details w-full h-auto clear-both flex mb-[60px]">
+                <div className="textbox w-[70%] pr-[40px]">
+                  <p className="mb-[15px]">
+                  本郷キャンパスの表層には、風雨により削られた舗装や剥離した壁面など、積年の痕跡が数多く存在する。意識しないと見えてこないその埋もれた痕跡を収集する。さらに、欠損部をスキャンして、その空白部分を実体化させることで、異質な素材により痕跡を「補完」する。補完には3Dスキャンや3Dプリント、CNCマシンなどを用いて、デジタルとリアルの間で情報を往復させた。  さあ、地図を片手にあなたも痕跡収集の旅へ。
+                  </p>
+                  <p>
+                  ※二瓶雄太をリーダーとする「本郷補完計画」の制作協力者として、3Dプリントを用いた欠損部の補完を行った。写真の作品はすべて私（犬田悠斗）が制作したものである。
+                  </p>
+                </div>
+                <div className="detailbox w-[30%] pl-[40px]">
+                  <ul>
+                    <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">Category</span>
+                      <span>
+                        <a className="text-[#7d7789]" href="#">
+                          Other
+                        </a>
+                      </span>
+                    </li>
+                    <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">Date</span>
+                      <span>2023/11/16</span>
+                    </li>
+                    <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">制作者</span>
+                      <span>二瓶雄太（リーダー）、犬田悠斗、福井桃子、中里朋楓、四方璃玖人、水上花那、ジャヤビクラマ幸一、乘濵駿平</span>
+                    </li>
+                    {/* <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">URL</span>
+                      <a className="text-[#7d7789]" target="_blank" href="https://crowdsourcing-game.vercel.app/"><span>https://crowdsourcing-game.vercel.app/</span></a>
+                    </li> */}
+                    {/* <li className="w-full float-left">
+                      <span className="first font-bold block">Share</span>
+                      <ul className="share relative top-[7px]">
+                        <li className="mr-[13px] inline-block">
+                          <a className="text-[#7d7789]" href="#">
+                            <img
+                              className="svg"
+                              src="assets/img/svg/social/facebook.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </li>
+                        <li className="mr-[13px] inline-block">
+                          <a className="text-[#7d7789]" href="#">
+                            <img
+                              className="svg"
+                              src="assets/img/svg/social/twitter.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </li>
+                        <li className="inline-block">
+                          <a className="text-[#7d7789]" href="#">
+                            <img
+                              className="svg"
+                              src="assets/img/svg/social/instagram.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </li>
+                      </ul>
+                    </li> */}
+                  </ul>
+                </div>
+              </div>
+              <div className="additional_images w-full clear-both float-left h-auto">
+                <ul className="ml-[-30px]">
+                  <li className="mb-[30px] float-left pl-[30px]">
+                    <div className="list_inner w-full clear-both float-left h-auto relative">
+                      <div className="my_image relative">
+                        <img
+                          className="relative opacity-0 min-w-full"
+                          src="assets/img/thumbs/4-2.jpg"
+                          alt="image"
+                        />
+                        <div
+                          className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                          data-img-url="assets/img/portfolio/本郷補完3.jpg"
+                          style={{
+                            backgroundImage:
+                              'url("assets/img/portfolio/本郷補完3.jpg")',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li className="mb-[30px] float-left pl-[30px]">
+                    <div className="list_inner w-full clear-both float-left h-auto relative">
+                      <div className="my_image relative">
+                        <img
+                          className="relative opacity-0 min-w-full"
+                          src="assets/img/thumbs/4-2.jpg"
+                          alt="image"
+                        />
+                        <div
+                          className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                          data-img-url="assets/img/portfolio/本郷補完4.jpg"
+                          style={{
+                            backgroundImage:
+                              'url("assets/img/portfolio/本郷補完4.jpg")',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li className="mb-[30px] float-left pl-[30px]">
+                    <div className="list_inner w-full clear-both float-left h-auto relative">
+                      <div className="my_image relative">
+                        <img
+                          className="relative opacity-0 min-w-full"
+                          src="assets/img/thumbs/4-2.jpg"
+                          alt="image"
+                        />
+                        <div
+                          className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                          data-img-url="assets/img/portfolio/本郷補完5.jpg"
+                          style={{
+                            backgroundImage:
+                              'url("assets/img/portfolio/本郷補完5.jpg")',
                           }}
                         />
                       </div>

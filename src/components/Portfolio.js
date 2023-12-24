@@ -4,7 +4,7 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import SectionContainer from "../layout/SectionContainer";
 import { dataImage } from "../utils";
 import ImageView from "./ImagePopup";
-import { Detail, Soundcloud } from "./Popup";
+import { Detail, Soundcloud, Hongo } from "./Popup";
 
 const Portfolio = () => {
   const ModalVideo = dynamic(
@@ -52,12 +52,16 @@ const Portfolio = () => {
   const [isOpen2, setIsOpen2] = useState(false);
   const [isOpen3, setIsOpen3] = useState(false);
   const [isOpen4, setIsOpen4] = useState(false);
+  const [isOpen5, setIsOpen5] = useState(false);
 
   function toggleModalThree() {
     setIsOpen3(!isOpen3);
   }
   function toggleModalFour() {
     setIsOpen4(!isOpen4);
+  }
+  function toggleModalFive() {
+    setIsOpen5(!isOpen5);
   }
   return (
     <Fragment>
@@ -82,6 +86,7 @@ const Portfolio = () => {
       />
       <Soundcloud isOpen3={isOpen3} toggleModalThree={toggleModalThree} />
       <Detail isOpen4={isOpen4} toggleModalFour={toggleModalFour} />
+      <Hongo isOpen5={isOpen5} toggleModalFive={toggleModalFive} />
       <SectionContainer navName="portfolio">
         <div className="section_inner">
           <div className="cavani_tm_portfolio w-full h-auto clear-both float-left mb-[70px]">
@@ -122,17 +127,17 @@ const Portfolio = () => {
                     Graphics
                   </a>
                 </li>
-                {/* <li className="mr-[40px] inline-block">
+                <li className="mr-[40px] inline-block">
                   <a
                     href="#"
                     className="text-[#333] font-poppins font-medium transition-all duration-300"
                     data-filter=".soundcloud"
-                    onClick={handleFilterKeyChange("soundcloud")}
+                    onClick={handleFilterKeyChange("other")}
                   >
-                    Soundcloud
+                    Other
                   </a>
                 </li>
-                <li className="mr-[40px] inline-block">
+                {/* <li className="mr-[40px] inline-block">
                   <a
                     href="#"
                     className="text-[#333] font-poppins font-medium transition-all duration-300"
@@ -259,7 +264,7 @@ const Portfolio = () => {
                         onClick={toggleModalFour}
                       />
                     </div>
-                    <div className="hidden_content hidden opacity-0 invisible absolute z-[-111]">
+                    {/* <div className="hidden_content hidden opacity-0 invisible absolute z-[-111]">
                       <div className="popup_details w-full h-auto clear-both float-left">
                         <div className="main_details w-full h-auto clear-both flex mb-[60px]">
                           <div className="textbox w-[70%] pr-[40px]">
@@ -391,9 +396,11 @@ const Portfolio = () => {
                           </ul>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </li>
+
+
                 <li className="graphics mb-[50px] w-1/2 float-left pl-[50px] item__">
                   <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
                     <div className="image relative">
@@ -419,6 +426,38 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </li>
+
+
+
+                <li className="other mb-[50px] w-1/2 float-left pl-[50px] item__">
+                  <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
+                    <div className="image relative">
+                      <img
+                        className="relative opacity-0 min-w-full"
+                        src="assets/img/thumbs/1-1.jpg"
+                        alt
+                      />
+                      <div
+                        className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                        data-img-url="assets/img/portfolio/本郷補完2.jpg"
+                      />
+                      <div className="details">
+                        <h3 className="text-[16px] mb-[2px] font-semibold">
+                          本郷補完計画（制作協力）
+                        </h3>
+                        <span className="text-[14px]">Other</span>
+                      </div>
+                      <a
+                        className="cavani_tm_full_link portfolio_popup"
+                        href="#"
+                        onClick={toggleModalFive}
+                      />
+                    </div>
+                  </div>
+                </li>
+
+
+
                 <li className="graphics mb-[50px] w-1/2 float-left pl-[50px] item__">
                   <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
                     <div className="image relative">
