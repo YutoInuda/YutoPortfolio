@@ -4,7 +4,7 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import SectionContainer from "../layout/SectionContainer";
 import { dataImage } from "../utils";
 import ImageView from "./ImagePopup";
-import { Detail, Soundcloud, Hongo } from "./Popup";
+import { Detail, Soundcloud, Hongo ,Dance , Sakebe} from "./Popup";
 
 const Portfolio = () => {
   const ModalVideo = dynamic(
@@ -53,6 +53,8 @@ const Portfolio = () => {
   const [isOpen3, setIsOpen3] = useState(false);
   const [isOpen4, setIsOpen4] = useState(false);
   const [isOpen5, setIsOpen5] = useState(false);
+  const [isOpen6, setIsOpen6] = useState(false);
+  const [isOpen7, setIsOpen7] = useState(false);
 
   function toggleModalThree() {
     setIsOpen3(!isOpen3);
@@ -62,6 +64,12 @@ const Portfolio = () => {
   }
   function toggleModalFive() {
     setIsOpen5(!isOpen5);
+  }
+  function toggleModalSix() {
+    setIsOpen6(!isOpen6);
+  }
+  function toggleModalSeven() {
+    setIsOpen7(!isOpen7);
   }
   return (
     <Fragment>
@@ -87,6 +95,8 @@ const Portfolio = () => {
       <Soundcloud isOpen3={isOpen3} toggleModalThree={toggleModalThree} />
       <Detail isOpen4={isOpen4} toggleModalFour={toggleModalFour} />
       <Hongo isOpen5={isOpen5} toggleModalFive={toggleModalFive} />
+      <Dance isOpen6={isOpen6} toggleModalSix={toggleModalSix} />
+      <Sakebe isOpen7={isOpen7} toggleModalSeven={toggleModalSeven} />
       <SectionContainer navName="portfolio">
         <div className="section_inner">
           <div className="cavani_tm_portfolio w-full h-auto clear-both float-left mb-[70px]">
@@ -131,23 +141,24 @@ const Portfolio = () => {
                   <a
                     href="#"
                     className="text-[#333] font-poppins font-medium transition-all duration-300"
+                    data-filter=".image"
+                    onClick={handleFilterKeyChange("game")}
+                  >
+                    Game
+                  </a>
+                </li>
+                <li className="mr-[40px] inline-block">
+                  <a
+                    href="#"
+                    className="text-[#333] font-poppins font-medium transition-all duration-300"
                     data-filter=".soundcloud"
                     onClick={handleFilterKeyChange("other")}
                   >
                     Other
                   </a>
                 </li>
-                {/* <li className="mr-[40px] inline-block">
-                  <a
-                    href="#"
-                    className="text-[#333] font-poppins font-medium transition-all duration-300"
-                    data-filter=".image"
-                    onClick={handleFilterKeyChange("image")}
-                  >
-                    Image
-                  </a>
-                </li>
-                <li className="inline-block">
+                
+                {/* <li className="inline-block">
                   <a
                     href="#"
                     className="text-[#333] font-poppins font-medium transition-all duration-300"
@@ -427,7 +438,325 @@ const Portfolio = () => {
                   </div>
                 </li>
 
+                <li className="game mb-[50px] w-1/2 float-left pl-[50px] item__">
+                  <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
+                    <div className="image relative">
+                      <img
+                        className="relative opacity-0 min-w-full"
+                        src="assets/img/thumbs/1-1.jpg"
+                        alt
+                      />
+                      <div
+                        className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                        data-img-url="assets/img/portfolio/ShallWeDance.png"
+                      />
+                      <div className="details">
+                        <h3 className="text-[16px] mb-[2px] font-semibold">
+                          Shall we dance? 一緒に踊らないかい
+                        </h3>
+                        <span className="text-[14px]">Game</span>
+                      </div>
+                      <a
+                        className="cavani_tm_full_link portfolio_popup"
+                        href="#"
+                        onClick={toggleModalSix}
+                      />
+                    </div>
+                    {/* <div className="hidden_content hidden opacity-0 invisible absolute z-[-111]">
+                      <div className="popup_details w-full h-auto clear-both float-left">
+                        <div className="main_details w-full h-auto clear-both flex mb-[60px]">
+                          <div className="textbox w-[70%] pr-[40px]">
+                            <p className="mb-[15px]">
+                              We live in a world where we need to move quickly
+                              and iterate on our ideas as flexibly as possible.
+                              Building mockups strikes the ideal balance ease of
+                              modification. Building mockups strikes the ideal
+                              balance ease of modification.
+                            </p>
+                            <p>
+                              Mockups are useful both for the creative phase of
+                              the project - for instance when you're trying to
+                              figure out your user flows or the proper visual
+                              hierarchy - and the production phase when they
+                              phase when they will represent the target product.
+                              Building mockups strikes the ideal balance ease of
+                              modification.
+                            </p>
+                          </div>
+                          <div className="detailbox w-[30%] pl-[40px]">
+                            <ul>
+                              <li className="mb-[10px] w-full float-left">
+                                <span className="first font-bold block">
+                                  Client
+                                </span>
+                                <span>Alvaro Morata</span>
+                              </li>
+                              <li className="mb-[10px] w-full float-left">
+                                <span className="first font-bold block">
+                                  Category
+                                </span>
+                                <span>
+                                  <a className="text-[#7d7789]" href="#">
+                                    Detail
+                                  </a>
+                                </span>
+                              </li>
+                              <li className="mb-[10px] w-full float-left">
+                                <span className="first font-bold block">
+                                  Date
+                                </span>
+                                <span>March 07, 2021</span>
+                              </li>
+                              <li className="w-full float-left">
+                                <span className="first font-bold block">
+                                  Share
+                                </span>
+                                <ul className="share relative top-[7px]">
+                                  <li className="mr-[13px] inline-block">
+                                    <a className="text-[#7d7789]" href="#">
+                                      <img
+                                        className="svg"
+                                        src="assets/img/svg/social/facebook.svg"
+                                        alt
+                                      />
+                                    </a>
+                                  </li>
+                                  <li className="mr-[13px] inline-block">
+                                    <a className="text-[#7d7789]" href="#">
+                                      <img
+                                        className="svg"
+                                        src="assets/img/svg/social/twitter.svg"
+                                        alt
+                                      />
+                                    </a>
+                                  </li>
+                                  <li className="inline-block">
+                                    <a className="text-[#7d7789]" href="#">
+                                      <img
+                                        className="svg"
+                                        src="assets/img/svg/social/instagram.svg"
+                                        alt
+                                      />
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div className="additional_images w-full clear-both float-left h-auto">
+                          <ul className="ml-[-30px]">
+                            <li className="mb-[30px] float-left pl-[30px]">
+                              <div className="list_inner w-full clear-both float-left h-auto relative">
+                                <div className="my_image relative">
+                                  <img
+                                    className="relative opacity-0 min-w-full"
+                                    src="assets/img/thumbs/4-2.jpg"
+                                    alt
+                                  />
+                                  <div
+                                    className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                                    data-img-url="assets/img/portfolio/8.jpg"
+                                  />
+                                </div>
+                              </div>
+                            </li>
+                            <li className="mb-[30px] float-left pl-[30px]">
+                              <div className="list_inner w-full clear-both float-left h-auto relative">
+                                <div className="my_image relative">
+                                  <img
+                                    className="relative opacity-0 min-w-full"
+                                    src="assets/img/thumbs/4-2.jpg"
+                                    alt
+                                  />
+                                  <div
+                                    className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                                    data-img-url="assets/img/portfolio/7.jpg"
+                                  />
+                                </div>
+                              </div>
+                            </li>
+                            <li className="mb-[30px] float-left pl-[30px]">
+                              <div className="list_inner w-full clear-both float-left h-auto relative">
+                                <div className="my_image relative">
+                                  <img
+                                    className="relative opacity-0 min-w-full"
+                                    src="assets/img/thumbs/4-2.jpg"
+                                    alt
+                                  />
+                                  <div
+                                    className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                                    data-img-url="assets/img/portfolio/7.jpg"
+                                  />
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div> */}
+                  </div>
+                </li>
 
+                <li className="game mb-[50px] w-1/2 float-left pl-[50px] item__">
+                  <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
+                    <div className="image relative">
+                      <img
+                        className="relative opacity-0 min-w-full"
+                        src="assets/img/thumbs/1-1.jpg"
+                        alt
+                      />
+                      <div
+                        className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                        data-img-url="assets/img/portfolio/sakebe1.png"
+                      />
+                      <div className="details">
+                        <h3 className="text-[16px] mb-[2px] font-semibold">
+                          さけべ！！！
+                        </h3>
+                        <span className="text-[14px]">Game</span>
+                      </div>
+                      <a
+                        className="cavani_tm_full_link portfolio_popup"
+                        href="#"
+                        onClick={toggleModalSeven}
+                      />
+                    </div>
+                    {/* <div className="hidden_content hidden opacity-0 invisible absolute z-[-111]">
+                      <div className="popup_details w-full h-auto clear-both float-left">
+                        <div className="main_details w-full h-auto clear-both flex mb-[60px]">
+                          <div className="textbox w-[70%] pr-[40px]">
+                            <p className="mb-[15px]">
+                              We live in a world where we need to move quickly
+                              and iterate on our ideas as flexibly as possible.
+                              Building mockups strikes the ideal balance ease of
+                              modification. Building mockups strikes the ideal
+                              balance ease of modification.
+                            </p>
+                            <p>
+                              Mockups are useful both for the creative phase of
+                              the project - for instance when you're trying to
+                              figure out your user flows or the proper visual
+                              hierarchy - and the production phase when they
+                              phase when they will represent the target product.
+                              Building mockups strikes the ideal balance ease of
+                              modification.
+                            </p>
+                          </div>
+                          <div className="detailbox w-[30%] pl-[40px]">
+                            <ul>
+                              <li className="mb-[10px] w-full float-left">
+                                <span className="first font-bold block">
+                                  Client
+                                </span>
+                                <span>Alvaro Morata</span>
+                              </li>
+                              <li className="mb-[10px] w-full float-left">
+                                <span className="first font-bold block">
+                                  Category
+                                </span>
+                                <span>
+                                  <a className="text-[#7d7789]" href="#">
+                                    Detail
+                                  </a>
+                                </span>
+                              </li>
+                              <li className="mb-[10px] w-full float-left">
+                                <span className="first font-bold block">
+                                  Date
+                                </span>
+                                <span>March 07, 2021</span>
+                              </li>
+                              <li className="w-full float-left">
+                                <span className="first font-bold block">
+                                  Share
+                                </span>
+                                <ul className="share relative top-[7px]">
+                                  <li className="mr-[13px] inline-block">
+                                    <a className="text-[#7d7789]" href="#">
+                                      <img
+                                        className="svg"
+                                        src="assets/img/svg/social/facebook.svg"
+                                        alt
+                                      />
+                                    </a>
+                                  </li>
+                                  <li className="mr-[13px] inline-block">
+                                    <a className="text-[#7d7789]" href="#">
+                                      <img
+                                        className="svg"
+                                        src="assets/img/svg/social/twitter.svg"
+                                        alt
+                                      />
+                                    </a>
+                                  </li>
+                                  <li className="inline-block">
+                                    <a className="text-[#7d7789]" href="#">
+                                      <img
+                                        className="svg"
+                                        src="assets/img/svg/social/instagram.svg"
+                                        alt
+                                      />
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div className="additional_images w-full clear-both float-left h-auto">
+                          <ul className="ml-[-30px]">
+                            <li className="mb-[30px] float-left pl-[30px]">
+                              <div className="list_inner w-full clear-both float-left h-auto relative">
+                                <div className="my_image relative">
+                                  <img
+                                    className="relative opacity-0 min-w-full"
+                                    src="assets/img/thumbs/4-2.jpg"
+                                    alt
+                                  />
+                                  <div
+                                    className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                                    data-img-url="assets/img/portfolio/8.jpg"
+                                  />
+                                </div>
+                              </div>
+                            </li>
+                            <li className="mb-[30px] float-left pl-[30px]">
+                              <div className="list_inner w-full clear-both float-left h-auto relative">
+                                <div className="my_image relative">
+                                  <img
+                                    className="relative opacity-0 min-w-full"
+                                    src="assets/img/thumbs/4-2.jpg"
+                                    alt
+                                  />
+                                  <div
+                                    className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                                    data-img-url="assets/img/portfolio/7.jpg"
+                                  />
+                                </div>
+                              </div>
+                            </li>
+                            <li className="mb-[30px] float-left pl-[30px]">
+                              <div className="list_inner w-full clear-both float-left h-auto relative">
+                                <div className="my_image relative">
+                                  <img
+                                    className="relative opacity-0 min-w-full"
+                                    src="assets/img/thumbs/4-2.jpg"
+                                    alt
+                                  />
+                                  <div
+                                    className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                                    data-img-url="assets/img/portfolio/7.jpg"
+                                  />
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div> */}
+                  </div>
+                </li>
 
                 <li className="other mb-[50px] w-1/2 float-left pl-[50px] item__">
                   <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
@@ -457,7 +786,31 @@ const Portfolio = () => {
                 </li>
 
 
-
+                <li className="graphics mb-[50px] w-1/2 float-left pl-[50px] item__">
+                  <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
+                    <div className="image relative">
+                      <img
+                        className="relative opacity-0 min-w-full"
+                        src="assets/img/thumbs/1-1.jpg"
+                        alt
+                      />
+                      <div
+                        className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                        data-img-url="assets/img/portfolio/飛翔表紙1.png"
+                      />
+                      <div className="details">
+                        <h3 className="text-[16px] mb-[2px] font-semibold">
+                          広島大学総合科学部広報誌『飛翔』表紙
+                        </h3>
+                        <span className="text-[14px]">Graphics</span>
+                      </div>
+                      <a
+                        className="cavani_tm_full_link zoom"
+                        href="assets/img/portfolio/飛翔表紙1.png"
+                      />
+                    </div>
+                  </div>
+                </li>
                 <li className="graphics mb-[50px] w-1/2 float-left pl-[50px] item__">
                   <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
                     <div className="image relative">
@@ -654,31 +1007,6 @@ const Portfolio = () => {
                       <a
                         className="cavani_tm_full_link zoom"
                         href="assets/img/portfolio/polygon.jpg"
-                      />
-                    </div>
-                  </div>
-                </li>
-                <li className="graphics mb-[50px] w-1/2 float-left pl-[50px] item__">
-                  <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
-                    <div className="image relative">
-                      <img
-                        className="relative opacity-0 min-w-full"
-                        src="assets/img/thumbs/1-1.jpg"
-                        alt
-                      />
-                      <div
-                        className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
-                        data-img-url="assets/img/portfolio/飛翔表紙1.jpg"
-                      />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          広島大学総合科学部広報誌『飛翔』表紙
-                        </h3>
-                        <span className="text-[14px]">Graphics</span>
-                      </div>
-                      <a
-                        className="cavani_tm_full_link zoom"
-                        href="assets/img/portfolio/飛翔表紙1.jpg"
                       />
                     </div>
                   </div>

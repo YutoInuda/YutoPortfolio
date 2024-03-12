@@ -387,3 +387,349 @@ export const Hongo = ({ isOpen5, toggleModalFive }) => {
     </Modal>
   );
 };
+
+
+export const Dance = ({ isOpen6, toggleModalSix }) => {
+  return (
+    <Modal
+      isOpen={isOpen6}
+      onRequestClose={toggleModalSix}
+      contentLabel="My dialog"
+      className="mymodal"
+      overlayClassName="myoverlay"
+      closeTimeoutMS={300}
+      openTimeoutMS={300}
+    >
+      <div className="cavani_tm_modalbox opened">
+        <div className="box_inner">
+          <div className="close">
+            <a href="#" onClick={toggleModalSix}>
+              <i className="icon-cancel" />
+            </a>
+          </div>
+          <div className="description_wrap">
+            <div className="popup_details w-full h-auto clear-both float-left">
+              <div className="top_image">
+                <img src="assets/img/thumbs/4-2.jpg" alt="image" />
+                <div
+                  className="main"
+                  data-img-url="assets/img/portfolio/dance2.jpg"
+                  style={{
+                    backgroundImage: 'url("assets/img/portfolio/dance2.jpg")',
+                  }}
+                />
+              </div>
+              <div className="portfolio_main_title">
+                <h3 className="text-[16px] mb-[2px] font-semibold">
+                  Shall we dance?　一緒に踊らないかい
+                </h3>
+                <span className="text-[14px]">Game</span>
+                <div />
+              </div>
+              <div className="main_details w-full h-auto clear-both flex mb-[60px]">
+                <div className="textbox w-[70%] pr-[40px]">
+                  <p className="mb-[15px]">
+                  与えられたカードで口説き文句を作り、相手に「この人いいな！」と思わせるカードゲーム。大人気ドラマをきっかけに、「Shall we dance? 一緒に踊らないかい?」という口説き文句が大バズり。英語と日本語を用いて、気になる人に声をかけることがイケている時代に。英語力を駆使して、より多くの気になる人から好感度を獲得しよう。英語でキザな口説き文句を面白おかしく言い合いながら、英語の助動詞や勧誘表現、依頼表現を学習することができる。
+                  </p>
+                  <p>
+                  このゲームを通して、英語でキザな口説き文句を面白おかしく言い合いながら、英語の助動詞や勧誘表現、依頼表現を学習することができる。
+                  </p>
+                </div>
+                <div className="detailbox w-[30%] pl-[40px]">
+                  <ul>
+                    <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">Category</span>
+                      <span>
+                        <a className="text-[#7d7789]" href="#">
+                          Game
+                        </a>
+                      </span>
+                    </li>
+                    <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">Date</span>
+                      <span>2023/12/10</span>
+                    </li>
+                    {/* <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">制作者</span>
+                      <span>二瓶雄太（リーダー）、犬田悠斗、福井桃子、中里朋楓、四方璃玖人、水上花那、ジャヤビクラマ幸一、乘濵駿平</span>
+                    </li> */}
+                    <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">ルール</span>
+                      <a className="text-[#7d7789]" target="_blank" href="https://docs.google.com/document/d/1aoyVX_jXUHH4NWdFyLM8jWCLeGCDpNEgCicZPThFKIU/edit?usp=sharing"><span>https://docs.google.com/document/d/1aoyVX_jXUHH4NWdFyLM8jWCLeGCDpNEgCicZPThFKIU/edit?usp=sharing</span></a>
+                    </li>
+                    {/* <li className="w-full float-left">
+                      <span className="first font-bold block">Share</span>
+                      <ul className="share relative top-[7px]">
+                        <li className="mr-[13px] inline-block">
+                          <a className="text-[#7d7789]" href="#">
+                            <img
+                              className="svg"
+                              src="assets/img/svg/social/facebook.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </li>
+                        <li className="mr-[13px] inline-block">
+                          <a className="text-[#7d7789]" href="#">
+                            <img
+                              className="svg"
+                              src="assets/img/svg/social/twitter.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </li>
+                        <li className="inline-block">
+                          <a className="text-[#7d7789]" href="#">
+                            <img
+                              className="svg"
+                              src="assets/img/svg/social/instagram.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </li>
+                      </ul>
+                    </li> */}
+                  </ul>
+                </div>
+              </div>
+              <div className="additional_images w-full clear-both float-left h-auto">
+                <ul className="ml-[-30px]">
+                  <li className="mb-[30px] float-left pl-[30px]">
+                    <div className="list_inner w-full clear-both float-left h-auto relative">
+                      <div className="my_image relative">
+                        <img
+                          className="relative opacity-0 min-w-full"
+                          src="assets/img/thumbs/4-2.jpg"
+                          alt="image"
+                        />
+                        <div
+                          className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                          data-img-url="assets/img/portfolio/dance3.jpg"
+                          style={{
+                            backgroundImage:
+                              'url("assets/img/portfolio/dance3.jpg")',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li className="mb-[30px] float-left pl-[30px]">
+                    <div className="list_inner w-full clear-both float-left h-auto relative">
+                      <div className="my_image relative">
+                        <img
+                          className="relative opacity-0 min-w-full"
+                          src="assets/img/thumbs/4-2.jpg"
+                          alt="image"
+                        />
+                        <div
+                          className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                          data-img-url="assets/img/portfolio/dance4.jpg"
+                          style={{
+                            backgroundImage:
+                              'url("assets/img/portfolio/dance4.jpg")',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li className="mb-[30px] float-left pl-[30px]">
+                    <div className="list_inner w-full clear-both float-left h-auto relative">
+                      <div className="my_image relative">
+                        <img
+                          className="relative opacity-0 min-w-full"
+                          src="assets/img/thumbs/4-2.jpg"
+                          alt="image"
+                        />
+                        <div
+                          className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                          data-img-url="assets/img/portfolio/dance1.jpg"
+                          style={{
+                            backgroundImage:
+                              'url("assets/img/portfolio/dance1.jpg")',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Modal>
+  );
+};
+
+
+export const Sakebe = ({ isOpen7, toggleModalSeven }) => {
+  return (
+    <Modal
+      isOpen={isOpen7}
+      onRequestClose={toggleModalSeven}
+      contentLabel="My dialog"
+      className="mymodal"
+      overlayClassName="myoverlay"
+      closeTimeoutMS={300}
+      openTimeoutMS={300}
+    >
+      <div className="cavani_tm_modalbox opened">
+        <div className="box_inner">
+          <div className="close">
+            <a href="#" onClick={toggleModalSeven}>
+              <i className="icon-cancel" />
+            </a>
+          </div>
+          <div className="description_wrap">
+            <div className="popup_details w-full h-auto clear-both float-left">
+              <div className="top_image">
+                <img src="assets/img/thumbs/4-2.jpg" alt="image" />
+                <div
+                  className="main"
+                  data-img-url="assets/img/portfolio/sakebe1.png"
+                  style={{
+                    backgroundImage: 'url("assets/img/portfolio/sakebe1.png")',
+                  }}
+                />
+              </div>
+              <div className="portfolio_main_title">
+                <h3 className="text-[16px] mb-[2px] font-semibold">
+                  さけべ！！！
+                </h3>
+                <span className="text-[14px]">Game</span>
+                <div />
+              </div>
+              <div className="main_details w-full h-auto clear-both flex mb-[60px]">
+                <div className="textbox w-[70%] pr-[40px]">
+                  <p className="mb-[15px]">
+                  声を用いて人を避難させるゲーム。タイムプレッシャーに追われる中、より多くの人々に災害の危機を伝え、無事に避難させよう。また、日常でも遊んでもらい声出しの練習をしてもらえるように、声でりんごを落とすモードも実装。避難時に声かけを行える人が増加することを目的として開発。開発にあたっては、MonoGameと音声認識を用いる。
+                  </p>
+                  <p>
+                  The 9th Serious Game Jamにおいて、The Best Game Awardを受賞。
+                  </p>
+                </div>
+                <div className="detailbox w-[30%] pl-[40px]">
+                  <ul>
+                    <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">Category</span>
+                      <span>
+                        <a className="text-[#7d7789]" href="#">
+                          Game
+                        </a>
+                      </span>
+                    </li>
+                    <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">Date</span>
+                      <span>2024/3/7</span>
+                    </li>
+                    <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">制作者</span>
+                      <span>犬田悠斗（リーダー）、井上護、藤崎賢曙、横沢大斗、三田村勉</span>
+                    </li>
+                    <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">ウェブサイト</span>
+                      <a className="text-[#7d7789]" target="_blank" href="https://gamejam1234.itch.io/1234"><span>https://gamejam1234.itch.io/1234</span></a>
+                    </li>
+                    {/* <li className="w-full float-left">
+                      <span className="first font-bold block">Share</span>
+                      <ul className="share relative top-[7px]">
+                        <li className="mr-[13px] inline-block">
+                          <a className="text-[#7d7789]" href="#">
+                            <img
+                              className="svg"
+                              src="assets/img/svg/social/facebook.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </li>
+                        <li className="mr-[13px] inline-block">
+                          <a className="text-[#7d7789]" href="#">
+                            <img
+                              className="svg"
+                              src="assets/img/svg/social/twitter.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </li>
+                        <li className="inline-block">
+                          <a className="text-[#7d7789]" href="#">
+                            <img
+                              className="svg"
+                              src="assets/img/svg/social/instagram.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </li>
+                      </ul>
+                    </li> */}
+                  </ul>
+                </div>
+              </div>
+              <div className="additional_images w-full clear-both float-left h-auto">
+                <ul className="ml-[-30px]">
+                  <li className="mb-[30px] float-left pl-[30px]">
+                    <div className="list_inner w-full clear-both float-left h-auto relative">
+                      <div className="my_image relative">
+                        <img
+                          className="relative opacity-0 min-w-full"
+                          src="assets/img/thumbs/4-2.jpg"
+                          alt="image"
+                        />
+                        <div
+                          className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                          data-img-url="assets/img/portfolio/sakebe2.png"
+                          style={{
+                            backgroundImage:
+                              'url("assets/img/portfolio/sakebe2.png")',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li className="mb-[30px] float-left pl-[30px]">
+                    <div className="list_inner w-full clear-both float-left h-auto relative">
+                      <div className="my_image relative">
+                        <img
+                          className="relative opacity-0 min-w-full"
+                          src="assets/img/thumbs/4-2.jpg"
+                          alt="image"
+                        />
+                        <div
+                          className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                          data-img-url="assets/img/portfolio/sakebe3.png"
+                          style={{
+                            backgroundImage:
+                              'url("assets/img/portfolio/sakebe3.png")',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li className="mb-[30px] float-left pl-[30px]">
+                    <div className="list_inner w-full clear-both float-left h-auto relative">
+                      <div className="my_image relative">
+                        <img
+                          className="relative opacity-0 min-w-full"
+                          src="assets/img/thumbs/4-2.jpg"
+                          alt="image"
+                        />
+                        <div
+                          className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                          data-img-url="assets/img/portfolio/sakebe5.png"
+                          style={{
+                            backgroundImage:
+                              'url("assets/img/portfolio/sakebe5.png")',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Modal>
+  );
+};

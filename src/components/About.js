@@ -53,7 +53,7 @@ const About = () => {
                   <strong>犬田悠斗/Inuda Yuto</strong> 
                 </p>
                 <p>
-                  東京大学大学院学際情報学府に在籍中。遊ぶことで社会貢献できるゲームであるクラウドソーシングゲームの開発・評価を行っている。また、既存のクラウドソーシングゲームを収集し、それらを遊べるプラットフォームを開発した。
+                  東京大学大学院学際情報学府に在籍中。遊ぶことで社会貢献できるゲームであるクラウドソーシングゲームの開発・評価を行っている。また、アナログゲーム・デジタルゲーム制作、WEBアプリ開発、グラフィックデザイン、3Dプリントなど様々な制作を行っている。
                 </p>
               </div>
               <div className="right w-[50%]">
@@ -147,9 +147,6 @@ const About = () => {
                     <li className="mb-[8px] w-full float-left relative pl-[25px]">
                       展示
                     </li>
-                    <li className="mb-[8px] w-full float-left relative pl-[25px]">
-                      統計学
-                    </li>
                     <li className="w-full float-left relative pl-[25px]">
                       英語/中国語
                     </li>
@@ -164,6 +161,9 @@ const About = () => {
                 </div>
                 <div className="list w-full h-auto clear-both float-left mt-[55px]">
                   <ul>
+                  <li className="mb-[8px] w-full float-left relative pl-[25px]">
+                    「ゲーム内でのプレイヤーの社会的交流と自己表現におけるゲームリテラシー」,日本デジタルゲーム学会第14回年次大会, 企画セッション「ゲーム開発者リテラシーの未来展望～多面的な視点からの探究～」,2024
+                  </li>
                   <li className="mb-[8px] w-full float-left relative pl-[25px]">
                     「ゲーム的手法を用いたデータ収集法の開発と評価」,日本デジタルゲーム学会2023年夏季研究発表大会,ライトニングトークセッション,2023
                   </li>
