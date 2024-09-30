@@ -930,7 +930,7 @@ export const SF = ({ isOpen9, toggleModalNine }) => {
                 <img src="assets/img/thumbs/4-2.jpg" alt="image" />
                 <div
                   className="main"
-                  data-img-url="assets/img/portfolio/"
+                  data-img-url="assets/img/portfolio/WS4.jpg"
                   style={{
                     backgroundImage: 'url("assets/img/portfolio/WS4.jpg")',
                   }}
