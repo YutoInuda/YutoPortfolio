@@ -53,7 +53,7 @@ const About = () => {
                   <strong>犬田悠斗/Inuda Yuto</strong> 
                 </p>
                 <p>
-                  東京大学大学院学際情報学府に在籍中。遊ぶことで社会貢献できるゲームであるクラウドソーシングゲームの開発・評価を行っている。また、アナログゲーム・デジタルゲーム制作、WEBアプリ開発、グラフィックデザイン、3Dプリントなど様々な制作を行っている。
+                  東京大学大学院学際情報学府に在籍中。研究として、遊ぶことで社会貢献できるゲームであるクラウドソーシングゲームの開発・評価を行っている。また、アナログゲーム・デジタルゲーム制作、WEBアプリ開発、グラフィックデザイン、3Dプリントなど様々な制作を行っている。
                 </p>
               </div>
               <div className="right w-[50%]">
@@ -162,7 +162,18 @@ const About = () => {
                 <div className="list w-full h-auto clear-both float-left mt-[55px]">
                   <ul>
                   <li className="mb-[8px] w-full float-left relative pl-[25px]">
-                    「ゲーム内でのプレイヤーの社会的交流と自己表現におけるゲームリテラシー」,日本デジタルゲーム学会第14回年次大会, 企画セッション「ゲーム開発者リテラシーの未来展望～多面的な視点からの探究～」,2024
+                    「クラウドソーシングゲームのプラットフォーム「Meta Crowdsourcing Game」の開発,日本デジタルゲーム学会2024年夏季研究発表大会,インタラクティブセッション,2024
+                  </li>
+                  <li className="mb-[8px] w-full float-left relative pl-[25px]">
+                    「実験哲学におけるゲーミフィケーションを活用したWEB調査の開発実践の進捗,日本デジタルゲーム学会2024年夏季研究発表大会,ライトニングトークセッション,2024
+                  </li>
+                  <li className="mb-[8px] w-full float-left relative pl-[25px]">
+                    <a
+                        className="text-[#7d7789] transition-all duration-300 hover:text-[#333]"
+                        href="https://www.jstage.jst.go.jp/article/digrajproc/14/0/14_206/_article/-char/ja"
+                      >
+                        「ゲーム内でのプレイヤーの社会的交流と自己表現におけるゲームリテラシー」,日本デジタルゲーム学会第14回年次大会, 企画セッション「ゲーム開発者リテラシーの未来展望～多面的な視点からの探究～」,2024
+                      </a>
                   </li>
                   <li className="mb-[8px] w-full float-left relative pl-[25px]">
                     「ゲーム的手法を用いたデータ収集法の開発と評価」,日本デジタルゲーム学会2023年夏季研究発表大会,ライトニングトークセッション,2023
@@ -354,7 +365,7 @@ const About = () => {
                             <h3 className="text-[16px] mb-[2px] font-semibold">
                               日本デジタルゲーム学会
                             </h3>
-                            <span className="text-[14px]">会員/ゲーム教育SIG</span>
+                            <span className="text-[14px]">広報委員/ゲーム教育SIG</span>
                           </div>
                         </div>
                       </li>

@@ -107,10 +107,10 @@ export const Detail = ({ isOpen4, toggleModalFour }) => {
                       <span className="first font-bold block">Date</span>
                       <span>2023/11/16</span>
                     </li>
-                    <li className="mb-[10px] w-full float-left">
+                    {/* <li className="mb-[10px] w-full float-left">
                       <span className="first font-bold block">URL</span>
                       <a className="text-[#7d7789]" target="_blank" href="https://crowdsourcing-game.vercel.app/"><span>https://crowdsourcing-game.vercel.app/</span></a>
-                    </li>
+                    </li> */}
                     {/* <li className="w-full float-left">
                       <span className="first font-bold block">Share</span>
                       <ul className="share relative top-[7px]">
@@ -719,6 +719,522 @@ export const Sakebe = ({ isOpen7, toggleModalSeven }) => {
                           style={{
                             backgroundImage:
                               'url("assets/img/portfolio/sakebe5.png")',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Modal>
+  );
+};
+
+export const FreeWill = ({ isOpen8, toggleModalEight }) => {
+  return (
+    <Modal
+      isOpen={isOpen8}
+      onRequestClose={toggleModalEight}
+      contentLabel="My dialog"
+      className="mymodal"
+      overlayClassName="myoverlay"
+      closeTimeoutMS={300}
+      openTimeoutMS={300}
+    >
+      <div className="cavani_tm_modalbox opened">
+        <div className="box_inner">
+          <div className="close">
+            <a href="#" onClick={toggleModalEight}>
+              <i className="icon-cancel" />
+            </a>
+          </div>
+          <div className="description_wrap">
+            <div className="popup_details w-full h-auto clear-both float-left">
+              <div className="top_image">
+                <img src="assets/img/thumbs/4-2.jpg" alt="image" />
+                <div
+                  className="main"
+                  data-img-url="assets/img/portfolio/FreeWill.png"
+                  style={{
+                    backgroundImage: 'url("assets/img/portfolio/FreeWill.png")',
+                  }}
+                />
+              </div>
+              <div className="portfolio_main_title">
+                <h3 className="text-[16px] mb-[2px] font-semibold">
+                  Free Willー自由意志と道徳的責任ー
+                </h3>
+                <span className="text-[14px]">Game</span>
+                <div />
+              </div>
+              <div className="main_details w-full h-auto clear-both flex mb-[60px]">
+                <div className="textbox w-[70%] pr-[40px]">
+                  <p className="mb-[15px]">
+                  『Free Will 自由意志と道徳的責任』は、哲学の問題に関する人々の直感を明らかにするゲームです。
+                  </p>
+                  <p>
+                  このゲームでは、自由意志と道徳的責任に関するシナリオを進めてもらい、最後にいくつかの質問に回答してもらいます。このゲームでの回答が、哲学の問題の解明に役立てられます。
+                  </p>
+                </div>
+                <div className="detailbox w-[30%] pl-[40px]">
+                  <ul>
+                    <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">Category</span>
+                      <span>
+                        <a className="text-[#7d7789]" href="#">
+                          Game
+                        </a>
+                      </span>
+                    </li>
+                    {/* <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">Date</span>
+                      <span>2023/12/10</span>
+                    </li> */}
+                    {/* <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">制作者</span>
+                      <span>二瓶雄太（リーダー）、犬田悠斗、福井桃子、中里朋楓、四方璃玖人、水上花那、ジャヤビクラマ幸一、乘濵駿平</span>
+                    </li> */}
+                    {/* <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">ルール</span>
+                      <a className="text-[#7d7789]" target="_blank" href="https://docs.google.com/document/d/1aoyVX_jXUHH4NWdFyLM8jWCLeGCDpNEgCicZPThFKIU/edit?usp=sharing"><span>https://docs.google.com/document/d/1aoyVX_jXUHH4NWdFyLM8jWCLeGCDpNEgCicZPThFKIU/edit?usp=sharing</span></a>
+                    </li> */}
+                    {/* <li className="w-full float-left">
+                      <span className="first font-bold block">Share</span>
+                      <ul className="share relative top-[7px]">
+                        <li className="mr-[13px] inline-block">
+                          <a className="text-[#7d7789]" href="#">
+                            <img
+                              className="svg"
+                              src="assets/img/svg/social/facebook.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </li>
+                        <li className="mr-[13px] inline-block">
+                          <a className="text-[#7d7789]" href="#">
+                            <img
+                              className="svg"
+                              src="assets/img/svg/social/twitter.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </li>
+                        <li className="inline-block">
+                          <a className="text-[#7d7789]" href="#">
+                            <img
+                              className="svg"
+                              src="assets/img/svg/social/instagram.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </li>
+                      </ul>
+                    </li> */}
+                  </ul>
+                </div>
+              </div>
+              <div className="additional_images w-full clear-both float-left h-auto">
+                <ul className="ml-[-30px]">
+                  <li className="mb-[30px] float-left pl-[30px]">
+                    <div className="list_inner w-full clear-both float-left h-auto relative">
+                      <div className="my_image relative">
+                        <img
+                          className="relative opacity-0 min-w-full"
+                          src="assets/img/thumbs/4-2.jpg"
+                          alt="image"
+                        />
+                        <div
+                          className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                          data-img-url="assets/img/portfolio/FreeWill1.png"
+                          style={{
+                            backgroundImage:
+                              'url("assets/img/portfolio/FreeWill1.png")',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li className="mb-[30px] float-left pl-[30px]">
+                    <div className="list_inner w-full clear-both float-left h-auto relative">
+                      <div className="my_image relative">
+                        <img
+                          className="relative opacity-0 min-w-full"
+                          src="assets/img/thumbs/4-2.jpg"
+                          alt="image"
+                        />
+                        <div
+                          className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                          data-img-url="assets/img/portfolio/FreeWill2.png"
+                          style={{
+                            backgroundImage:
+                              'url("assets/img/portfolio/FreeWill2.png")',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li className="mb-[30px] float-left pl-[30px]">
+                    <div className="list_inner w-full clear-both float-left h-auto relative">
+                      <div className="my_image relative">
+                        <img
+                          className="relative opacity-0 min-w-full"
+                          src="assets/img/thumbs/4-2.jpg"
+                          alt="image"
+                        />
+                        <div
+                          className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                          data-img-url="assets/img/portfolio/FreeWill3.png"
+                          style={{
+                            backgroundImage:
+                              'url("assets/img/portfolio/FreeWill3.png")',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Modal>
+  );
+};
+
+export const SF = ({ isOpen9, toggleModalNine }) => {
+  return (
+    <Modal
+      isOpen={isOpen9}
+      onRequestClose={toggleModalNine}
+      contentLabel="My dialog"
+      className="mymodal"
+      overlayClassName="myoverlay"
+      closeTimeoutMS={300}
+      openTimeoutMS={300}
+    >
+      <div className="cavani_tm_modalbox opened">
+        <div className="box_inner">
+          <div className="close">
+            <a href="#" onClick={toggleModalNine}>
+              <i className="icon-cancel" />
+            </a>
+          </div>
+          <div className="description_wrap">
+            <div className="popup_details w-full h-auto clear-both float-left">
+              <div className="top_image">
+                <img src="assets/img/thumbs/4-2.jpg" alt="image" />
+                <div
+                  className="main"
+                  data-img-url="assets/img/portfolio/"
+                  style={{
+                    backgroundImage: 'url("assets/img/portfolio/WS4.jpg")',
+                  }}
+                />
+              </div>
+              <div className="portfolio_main_title">
+                <h3 className="text-[16px] mb-[2px] font-semibold">
+                SF作品を作ろう！「ゲームを基盤とした社会」を創造するワークショップ
+                </h3>
+                <span className="text-[14px]">Other</span>
+                <div />
+              </div>
+              <div className="main_details w-full h-auto clear-both flex mb-[60px]">
+                <div className="textbox w-[70%] pr-[40px]">
+                  <p className="mb-[15px]">
+                  SF作品を作ろう！「ゲームを基盤とした社会」を創造するワークショップは、SFの力でまだ存在しない未来を想像する「SFプロトタイピング」という手法を用いたワークショップです。
+                  </p>
+                  <p>
+                  このワークショップでは、多くの人がゲームを通して世の中の発展に寄与する社会である「ゲームを基盤とした社会」をテーマに、まだ見ぬ世界を妄想してもらいました。
+                  </p>
+                </div>
+                <div className="detailbox w-[30%] pl-[40px]">
+                  <ul>
+                    <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">Category</span>
+                      <span>
+                        <a className="text-[#7d7789]" href="#">
+                          Other
+                        </a>
+                      </span>
+                    </li>
+                    {/* <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">Date</span>
+                      <span>2023/12/10</span>
+                    </li> */}
+                    {/* <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">制作者</span>
+                      <span>二瓶雄太（リーダー）、犬田悠斗、福井桃子、中里朋楓、四方璃玖人、水上花那、ジャヤビクラマ幸一、乘濵駿平</span>
+                    </li> */}
+                    {/* <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">ルール</span>
+                      <a className="text-[#7d7789]" target="_blank" href="https://docs.google.com/document/d/1aoyVX_jXUHH4NWdFyLM8jWCLeGCDpNEgCicZPThFKIU/edit?usp=sharing"><span>https://docs.google.com/document/d/1aoyVX_jXUHH4NWdFyLM8jWCLeGCDpNEgCicZPThFKIU/edit?usp=sharing</span></a>
+                    </li> */}
+                    {/* <li className="w-full float-left">
+                      <span className="first font-bold block">Share</span>
+                      <ul className="share relative top-[7px]">
+                        <li className="mr-[13px] inline-block">
+                          <a className="text-[#7d7789]" href="#">
+                            <img
+                              className="svg"
+                              src="assets/img/svg/social/facebook.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </li>
+                        <li className="mr-[13px] inline-block">
+                          <a className="text-[#7d7789]" href="#">
+                            <img
+                              className="svg"
+                              src="assets/img/svg/social/twitter.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </li>
+                        <li className="inline-block">
+                          <a className="text-[#7d7789]" href="#">
+                            <img
+                              className="svg"
+                              src="assets/img/svg/social/instagram.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </li>
+                      </ul>
+                    </li> */}
+                  </ul>
+                </div>
+              </div>
+              <div className="additional_images w-full clear-both float-left h-auto">
+                <ul className="ml-[-30px]">
+                  <li className="mb-[30px] float-left pl-[30px]">
+                    <div className="list_inner w-full clear-both float-left h-auto relative">
+                      <div className="my_image relative">
+                        <img
+                          className="relative opacity-0 min-w-full"
+                          src="assets/img/thumbs/4-2.jpg"
+                          alt="image"
+                        />
+                        <div
+                          className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                          data-img-url="assets/img/portfolio/WS5.JPG"
+                          style={{
+                            backgroundImage:
+                              'url("assets/img/portfolio/WS5.JPG")',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li className="mb-[30px] float-left pl-[30px]">
+                    <div className="list_inner w-full clear-both float-left h-auto relative">
+                      <div className="my_image relative">
+                        <img
+                          className="relative opacity-0 min-w-full"
+                          src="assets/img/thumbs/4-2.jpg"
+                          alt="image"
+                        />
+                        <div
+                          className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                          data-img-url="assets/img/portfolio/WS2.JPG"
+                          style={{
+                            backgroundImage:
+                              'url("assets/img/portfolio/WS2.JPG")',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li className="mb-[30px] float-left pl-[30px]">
+                    <div className="list_inner w-full clear-both float-left h-auto relative">
+                      <div className="my_image relative">
+                        <img
+                          className="relative opacity-0 min-w-full"
+                          src="assets/img/thumbs/4-2.jpg"
+                          alt="image"
+                        />
+                        <div
+                          className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                          data-img-url="assets/img/portfolio/WS3.jpg"
+                          style={{
+                            backgroundImage:
+                              'url("assets/img/portfolio/WS3.jpg")',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Modal>
+  );
+};
+
+export const Pets = ({ isOpen10, toggleModalTen }) => {
+  return (
+    <Modal
+      isOpen={isOpen10}
+      onRequestClose={toggleModalTen}
+      contentLabel="My dialog"
+      className="mymodal"
+      overlayClassName="myoverlay"
+      closeTimeoutMS={300}
+      openTimeoutMS={300}
+    >
+      <div className="cavani_tm_modalbox opened">
+        <div className="box_inner">
+          <div className="close">
+            <a href="#" onClick={toggleModalTen}>
+              <i className="icon-cancel" />
+            </a>
+          </div>
+          <div className="description_wrap">
+            <div className="popup_details w-full h-auto clear-both float-left">
+              <div className="top_image">
+                <img src="assets/img/thumbs/4-2.jpg" alt="image" />
+                <div
+                  className="main"
+                  data-img-url="assets/img/portfolio/わんにゃん.jpg"
+                  style={{
+                    backgroundImage: 'url("assets/img/portfolio/わんにゃん.jpg")',
+                  }}
+                />
+              </div>
+              <div className="portfolio_main_title">
+                <h3 className="text-[16px] mb-[2px] font-semibold">
+                  わんにゃん避難訓練
+                </h3>
+                <span className="text-[14px]">Game</span>
+                <div />
+              </div>
+              <div className="main_details w-full h-auto clear-both flex mb-[60px]">
+                <div className="textbox w-[70%] pr-[40px]">
+                  <p className="mb-[15px]">
+                  『わんにゃん避難訓練』は、ペットとの避難所生活を体験するシミュレーションゲームです。避難所で起こる様々なトラブルを、コマンドを用いて解決することで、ペットの幸福度を回復させてください。トラブルを解決するために、ペットの飼い主など周囲の人と積極的に連携することを忘れずに。
+                  </p>
+                  <p>
+                  The 10th Serious Game Jamにおいて、The Serious Game Grand Prizeを受賞。
+                  </p>
+                </div>
+                <div className="detailbox w-[30%] pl-[40px]">
+                  <ul>
+                    <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">Category</span>
+                      <span>
+                        <a className="text-[#7d7789]" href="#">
+                          Game
+                        </a>
+                      </span>
+                    </li>
+                    <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">Date</span>
+                      <span>2024/8/29</span>
+                    </li>
+                    <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">制作者</span>
+                      <span>犬田悠斗、濵田智輝、西森祐翔、伊澤愛海、辻川太裕</span>
+                    </li>
+                    <li className="mb-[10px] w-full float-left">
+                      <span className="first font-bold block">ウェブサイト</span>
+                      <a className="text-[#7d7789]" target="_blank" href="https://pisuke0115.itch.io/shelterpetsim"><span>https://pisuke0115.itch.io/shelterpetsim</span></a>
+                    </li>
+                    {/* <li className="w-full float-left">
+                      <span className="first font-bold block">Share</span>
+                      <ul className="share relative top-[7px]">
+                        <li className="mr-[13px] inline-block">
+                          <a className="text-[#7d7789]" href="#">
+                            <img
+                              className="svg"
+                              src="assets/img/svg/social/facebook.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </li>
+                        <li className="mr-[13px] inline-block">
+                          <a className="text-[#7d7789]" href="#">
+                            <img
+                              className="svg"
+                              src="assets/img/svg/social/twitter.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </li>
+                        <li className="inline-block">
+                          <a className="text-[#7d7789]" href="#">
+                            <img
+                              className="svg"
+                              src="assets/img/svg/social/instagram.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </li>
+                      </ul>
+                    </li> */}
+                  </ul>
+                </div>
+              </div>
+              <div className="additional_images w-full clear-both float-left h-auto">
+                <ul className="ml-[-30px]">
+                  <li className="mb-[30px] float-left pl-[30px]">
+                    <div className="list_inner w-full clear-both float-left h-auto relative">
+                      <div className="my_image relative">
+                        <img
+                          className="relative opacity-0 min-w-full"
+                          src="assets/img/thumbs/4-2.jpg"
+                          alt="image"
+                        />
+                        <div
+                          className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                          data-img-url="assets/img/portfolio/わんにゃん4.jpg"
+                          style={{
+                            backgroundImage:
+                              'url("assets/img/portfolio/わんにゃん4.jpg")',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li className="mb-[30px] float-left pl-[30px]">
+                    <div className="list_inner w-full clear-both float-left h-auto relative">
+                      <div className="my_image relative">
+                        <img
+                          className="relative opacity-0 min-w-full"
+                          src="assets/img/thumbs/4-2.jpg"
+                          alt="image"
+                        />
+                        <div
+                          className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                          data-img-url="assets/img/portfolio/わんにゃん2.jpg"
+                          style={{
+                            backgroundImage:
+                              'url("assets/img/portfolio/わんにゃん2.jpg")',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li className="mb-[30px] float-left pl-[30px]">
+                    <div className="list_inner w-full clear-both float-left h-auto relative">
+                      <div className="my_image relative">
+                        <img
+                          className="relative opacity-0 min-w-full"
+                          src="assets/img/thumbs/4-2.jpg"
+                          alt="image"
+                        />
+                        <div
+                          className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                          data-img-url="assets/img/portfolio/わんにゃん3.jpg"
+                          style={{
+                            backgroundImage:
+                              'url("assets/img/portfolio/わんにゃん3.jpg")',
                           }}
                         />
                       </div>
